@@ -50,6 +50,9 @@
                 padding: 0px;
                 margin: 0px;
                 overflow: hidden;
+                display: flex;                     /* fa que els li es posin en fila */
+                justify-content: space-evenly;    /* reparteix igualment els espais */
+                align-items: center;              /* centra verticalment si cal */
             }
             .navbar a{
                 color: white;
@@ -61,10 +64,9 @@
             .navbar a:hover{
                 color: blue;
                 background-color: darkgray;
-                
             }
-            .navbar li{
-                float: left;
+            .loc-div iframe{
+                margin-left: 10%;
             }
         </style>
     </head>
@@ -142,7 +144,9 @@
         </ul>
     </nav>
     <main>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1634.9432159161881!2d0.4382196403674276!3d41.73061572486711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a7106f67c65db3%3A0x389d6d1a817c9b57!2sTorrutech!5e1!3m2!1ses!2ses!4v1750785053148!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="loc-div">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1634.9432159161881!2d0.4382196403674276!3d41.73061572486711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a7106f67c65db3%3A0x389d6d1a817c9b57!2sTorrutech!5e1!3m2!1ses!2ses!4v1750785053148!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
     </body>
 </html>

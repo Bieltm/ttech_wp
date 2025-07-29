@@ -36,6 +36,30 @@
                 align-items: center;
                 gap: 10px;
             }
+            .slider-div{
+                margin: 50px auto 0;
+            }
+            .slider-div ul{
+                display: flex;
+                animation: slide 20s infinite alternate ease-in-out;
+            }
+            .slider-div ul li img{
+                height: 75%;
+                align-items: center;
+            }
+            @keyframes slide {
+                0% { margin-left: 0;}
+                20% { margin-left: 0;}
+
+                25% { margin-left: -100%;}
+                45% { margin-left: -100%;}
+
+                50% { margin-left: -200%;}
+                70% { margin-left: -200%;}
+
+                75% { margin-left: -300%;}
+                100% { margin-left: -300%;}
+            }
             body{
                 margin: 0px;
                 font-style: Arial, Helvetica, sans-serif;
@@ -44,15 +68,22 @@
             h1{
                 text-align: center;
             }
+            .navbar{
+                justify-content: space-between;
+            }
             .navbar ul{
                 list-style-type: none;
-                background-color: grey;
+                background-image: url("btm-bkg.png");
                 padding: 0px;
                 margin: 0px;
                 overflow: hidden;
+                display: flex;                     /* fa que els li es posin en fila */
+                justify-content: space-evenly;    /* reparteix igualment els espais */
+                align-items: center;              /* centra verticalment si cal */
             }
             .navbar a{
-                color: white;
+                background-image: url("btm-bkg.png");
+                color: black;
                 text-decoration: none;
                 padding: 15px;
                 display: block;
@@ -62,9 +93,6 @@
                 color: blue;
                 background-color: darkgray;
                 
-            }
-            .navbar li{
-                float: left;
             }
         </style>
     </head>
@@ -104,10 +132,26 @@
                 </a>
             </div>
         </div>
+        <div class="slider-div">
+            <ul>
+                <li>
+                    <img src="images/imgs1.jpeg">
+                </li>
+                <li>
+                    <img src="images/imgs2.jpeg">
+                </li>
+                <li>
+                    <img src="images/imgs3.jpeg">
+                </li>
+                <li>
+                    <img src="images/imgs4.jpeg">
+                </li>
+            </ul>
+        </div>
         <div class="img-logo">
             <img src="tt.png" height="60"/>
         </div>
-        <nav class="navbar">
+    <nav class="navbar">
         <ul>
             <li>
                 <a href="blog.html">

@@ -36,6 +36,14 @@
                 align-items: center;
                 gap: 10px;
             }
+            .ask-bckg{
+                background-color: whitesmoke;
+                color: black;
+            }
+            .ask-bckg form{
+                display:grid;
+                justify-content: center;
+            }
             body{
                 margin: 0px;
                 font-style: Arial, Helvetica, sans-serif;
@@ -50,6 +58,9 @@
                 padding: 0px;
                 margin: 0px;
                 overflow: hidden;
+                display: flex;                     /* fa que els li es posin en fila */
+                justify-content: space-evenly;    /* reparteix igualment els espais */
+                align-items: center;              /* centra verticalment si cal */
             }
             .navbar a{
                 color: white;
@@ -62,9 +73,6 @@
                 color: blue;
                 background-color: darkgray;
                 
-            }
-            .navbar li{
-                float: left;
             }
         </style>
     </head>
@@ -142,6 +150,7 @@
         </ul>
     </nav>
     <main>
+        <div class="ask-bckg">
             <form action="https://formsubmit.co/info@torrutech.cat" method="POST">
             <h2>Formulari</h2>
             <div class="input-group">
