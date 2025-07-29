@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TorruTech</title>
+        <style class="text/css">
+            @media (max-width: 767px){
+                .img-black img{
+                    display: none;
+                }
+            }
+            button {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+            .img-logo{
+                padding: 10px;
+            }
+            .img-black {
+                padding: 10px;
+                background-color: black;
+                color: white;
+                display: flex;
+                justify-content: space-between; /* Separa el bloc de left amb el de right */
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .left, .right {
+                display: flex; /* Per colocar horitzontalment */
+                align-items: center; /* Per colocar al centre vertical */
+                gap: 80px; /*Separació de 40px*/
+                flex-wrap: wrap; /* Permet que si no hi ha prou espai baixi a la seguent linea */
+            }
+            .contact-item{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            body{
+                margin: 0px;
+                font-style: Arial, Helvetica, sans-serif;
+                background-image: url("bckg.png");
+            }
+            h1{
+                text-align: center;
+            }
+            .navbar ul{
+                list-style-type: none;
+                background-color: grey;
+                padding: 0px;
+                margin: 0px;
+                overflow: hidden;
+            }
+            .navbar a{
+                color: white;
+                text-decoration: none;
+                padding: 15px;
+                display: block;
+                text-align: center;
+            }
+            .navbar a:hover{
+                color: blue;
+                background-color: darkgray;
+                
+            }
+            .navbar li{
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="img-black">
+            <!-- Bloc esquerre: info de contacte -->
+            <div class="left">
+                <div class="contact-item">
+                    <img src='ubi.png' height="24"/>
+                    <p>C/Sant Jaume 32, Almacelles</p>
+                </div>
+                <div class="contact-item">
+                    <img src='llamar.png' height="24"/>
+                    <p>744 482 609</p>
+                </div>
+                <div class="contact-item">
+                    <img src='buzon.png' height="24"/>
+                    <p>info@torrutech.cat</p>
+                </div>
+                <div class="contact-item">
+                    <img src='eye.png' height="24"/>
+                    <a href="https://www.hitwebcounter.com" target="_blank">
+                    <img src="https://hitwebcounter.com/counter/counter.php?page=21119093&style=0010&nbdigits=2&type=page&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a> 
+                </div>
+            </div>
+            <!-- Bloc dret: xarxes socials -->
+            <div class="right">
+                <a href="https://www.instagram.com/torrutech/" target="_blank">
+                    <button>
+                        <img src="inst.png" height="30" width="30" />
+                    </button>
+                </a>
+                <a href="https://www.facebook.com/torrutechalmacelles" target="_blank">
+                    <button>
+                        <img src="fb.png" height="30" width="30" />
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="img-logo">
+            <img src="tt.png" height="60"/>
+        </div>
+        <nav class="navbar">
+        <ul>
+            <li>
+                <a href="blog.html">
+                    Blog
+                </a>
+            </li>
+            <li>
+                <a href="ask.html">
+                    Pregunta'ns qualsevol cosa
+                </a>
+            </li>
+            <li>
+                <a href="location.html">
+                    On estem
+                </a>
+            </li>
+            <li>
+                <a href="marks.html">
+                    Marques que comercialitzem
+                </a>
+            </li>
+            <li>
+                <a href="telf.html">
+                    Operadors de telefonia
+                </a>
+            </li>
+            <li>
+                <a href="credits.html">
+                    Credits
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Blog</h1>
+        <p>Torrutech és una idea i un negoci que neix l'estiu del 2014 amb molta il·lusió i energia.</p>
+        <p>Els primers passos van ser durs, però amb peu ferm es va anar avançant fins on s'ha arribat ara.</p>
+        <p>Sempre buscant solucions als problemes tecnològics que a la gent d'Almacelles i voltants els han anat sorgint i sempre amb el meu somriure a la cara.</p>
+        <p>L'evolució ha set constant, ja que és un camp en constants canvis i continuarem evolucionant junts.</p>
+        <p>I això ens fa arribar al que és Torrutech ara, una botiga de proximitat i amb assessorament personalitzat per tot el sector tecnològic.</p>
+        <p>Vine a Torrutech!!</p>
+    </main>
+    </body>
+</html>
