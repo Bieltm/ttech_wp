@@ -46,7 +46,7 @@
             }
             .navbar ul{
                 list-style-type: none;
-                background-color: grey;
+                background-image: url("btm-bkg.png");
                 padding: 0px;
                 margin: 0px;
                 overflow: hidden;
@@ -55,7 +55,7 @@
                 align-items: center;              /* centra verticalment si cal */
             }
             .navbar a{
-                color: white;
+                color: black;
                 text-decoration: none;
                 padding: 15px;
                 display: block;
@@ -68,6 +68,10 @@
             }
             .main{
                 display: flex;
+            }
+            .cred-div{
+                background-color: whitesmoke;
+                width: 40%;
             }
         </style>
     </head>
@@ -108,7 +112,9 @@
             </div>
         </div>
         <div class="img-logo">
-            <img src="tt.png" height="60"/>
+            <a href="start.html">
+                <img src="tt.png" height="60"/>
+            </a>
         </div>
         <nav class="navbar">
         <ul>
@@ -145,13 +151,15 @@
         </ul>
     </nav>
     <main>
-        <h2>Contacte del creador de la pagina web</h2>
+        <div class="cred-div">
+            <h2>Contacte del creador de la pagina web</h2>
             <p>Gmail: bieltorruella2006@gmail.com</p>
             <a href="https://www.linkedin.com/in/biel-torruella-may%C3%B3s-bb87bb34b/" target="_blank">
                 <button>
                     <img src='https://static.vecteezy.com/system/resources/previews/018/930/480/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png' height="60" width="60" />
                 </button>
             </a>
+        </div>
     </main>
     </body>
 </html>

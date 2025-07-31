@@ -36,29 +36,6 @@
                 align-items: center;
                 gap: 10px;
             }
-            .slider-div{
-                margin: 50px auto 0;
-            }
-            .slider-div ul{
-                display: flex;
-                animation: slide 20s infinite alternate ease-in-out;
-            }
-            .slider-div ul li img{
-                align-items: center;
-            }
-            @keyframes slide {
-                0% { margin-left: 0;}
-                20% { margin-left: 0;}
-
-                25% { margin-left: -100%;}
-                45% { margin-left: -100%;}
-
-                50% { margin-left: -200%;}
-                70% { margin-left: -200%;}
-
-                75% { margin-left: -300%;}
-                100% { margin-left: -300%;}
-            }
             body{
                 margin: 0px;
                 font-style: Arial, Helvetica, sans-serif;
@@ -71,8 +48,8 @@
                 justify-content: space-between;
             }
             .navbar ul{
-                list-style-type: none;
                 background-image: url("btm-bkg.png");
+                list-style-type: none;
                 padding: 0px;
                 margin: 0px;
                 overflow: hidden;
@@ -81,7 +58,6 @@
                 align-items: center;              /* centra verticalment si cal */
             }
             .navbar a{
-                background-image: url("btm-bkg.png");
                 color: black;
                 text-decoration: none;
                 padding: 15px;
@@ -91,8 +67,13 @@
             .navbar a:hover{
                 color: blue;
                 background-color: darkgray;
-                
             }
+            .blog-div{
+                border-style: solid;
+                background-color: whitesmoke;
+                width: 70%;
+            }
+            
         </style>
     </head>
     <body>
@@ -131,24 +112,10 @@
                 </a>
             </div>
         </div>
-        <div class="slider-div">
-            <ul>
-                <li>
-                    <img src="images/imgs1.jpeg">
-                </li>
-                <li>
-                    <img src="images/imgs2.jpeg">
-                </li>
-                <li>
-                    <img src="images/imgs3.jpeg">
-                </li>
-                <li>
-                    <img src="images/imgs4.jpeg">
-                </li>
-            </ul>
-        </div>
         <div class="img-logo">
-            <img src="tt.png" height="60"/>
+            <a href="start.html">
+                <img src="tt.png" height="60"/>
+            </a>
         </div>
     <nav class="navbar">
         <ul>
@@ -185,13 +152,15 @@
         </ul>
     </nav>
     <main>
-        <h1>Blog</h1>
-        <p>Torrutech és una idea i un negoci que neix l'estiu del 2014 amb molta il·lusió i energia.</p>
-        <p>Els primers passos van ser durs, però amb peu ferm es va anar avançant fins on s'ha arribat ara.</p>
-        <p>Sempre buscant solucions als problemes tecnològics que a la gent d'Almacelles i voltants els han anat sorgint i sempre amb el meu somriure a la cara.</p>
-        <p>L'evolució ha set constant, ja que és un camp en constants canvis i continuarem evolucionant junts.</p>
-        <p>I això ens fa arribar al que és Torrutech ara, una botiga de proximitat i amb assessorament personalitzat per tot el sector tecnològic.</p>
-        <p>Vine a Torrutech!!</p>
+        <div class="blog-div">
+            <h1>Blog</h1>
+            <p>Torrutech és una idea i un negoci que neix l'estiu del 2014 amb molta il·lusió i energia.</p>
+            <p>Els primers passos van ser durs, però amb peu ferm es va anar avançant fins on s'ha arribat ara.</p>
+            <p>Sempre buscant solucions als problemes tecnològics que a la gent d'Almacelles i voltants els han anat sorgint i sempre amb el meu somriure a la cara.</p>
+            <p>L'evolució ha set constant, ja que és un camp en constants canvis i continuarem evolucionant junts.</p>
+            <p>I això ens fa arribar al que és Torrutech ara, una botiga de proximitat i amb assessorament personalitzat per tot el sector tecnològic.</p>
+            <p>Vine a Torrutech!!</p>
+        </div>
     </main>
     </body>
 </html>
