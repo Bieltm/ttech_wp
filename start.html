@@ -3,9 +3,11 @@
     <head>
         <title>TorruTech</title>
         <style class="text/css">
-            @media (max-width: 767px){
-                .img-black img{
-                    display: none;
+            @media (max-width: 600px){
+                .img-black .left, .right{
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    gap: 0px;
                 }
             }
             button {
@@ -25,6 +27,14 @@
                 align-items: center;
                 flex-wrap: wrap;
             }
+            .left img{
+                max-width: 24px;
+                height: auto;
+            }
+            .right img{
+                max-width: 30px;
+                height: auto;
+            }
             .left, .right {
                 display: flex; /* Per colocar horitzontalment */
                 align-items: center; /* Per colocar al centre vertical */
@@ -40,13 +50,14 @@
                 margin: auto;
             }
             .slider-div ul{
+                list-style-type: none;
                 display: flex;
                 animation: slide 20s infinite alternate ease-in-out;
             }
             .slider-div ul li img{
                 align-items: center;
                 width: auto;
-                height: 80%;
+                max-height: 80%;
             }
             @keyframes slide {
                 0% { margin-left: 0;}
@@ -81,9 +92,10 @@
                 display: flex;                     /* fa que els li es posin en fila */
                 justify-content: space-evenly;    /* reparteix igualment els espais */
                 align-items: center;              /* centra verticalment si cal */
+                max-width: 100%;
+                height: auto;
             }
             .navbar a{
-                background-image: url("btm-bkg.png");
                 color: black;
                 text-decoration: none;
                 padding: 15px;
@@ -102,19 +114,19 @@
             <!-- Bloc esquerre: info de contacte -->
             <div class="left">
                 <div class="contact-item">
-                    <img src='ubi.png' height="24"/>
+                    <img src='ubi.png'/>
                     <p>C/Sant Jaume 32, Almacelles</p>
                 </div>
                 <div class="contact-item">
-                    <img src='llamar.png' height="24"/>
+                    <img src='llamar.png'/>
                     <p>744 482 609</p>
                 </div>
                 <div class="contact-item">
-                    <img src='buzon.png' height="24"/>
+                    <img src='buzon.png'/>
                     <p>info@torrutech.cat</p>
                 </div>
                 <div class="contact-item">
-                    <img src='eye.png' height="24"/>
+                    <img src='eye.png'/>
                     <a href="https://www.hitwebcounter.com" target="_blank">
                     <img src="https://hitwebcounter.com/counter/counter.php?page=21119093&style=0010&nbdigits=2&type=page&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a> 
                 </div>
@@ -123,12 +135,12 @@
             <div class="right">
                 <a href="https://www.instagram.com/torrutech/" target="_blank">
                     <button>
-                        <img src="inst.png" height="30" width="30" />
+                        <img src="inst.png"/>
                     </button>
                 </a>
                 <a href="https://www.facebook.com/torrutechalmacelles" target="_blank">
                     <button>
-                        <img src="fb.png" height="30" width="30" />
+                        <img src="fb.png"/>
                     </button>
                 </a>
             </div>
