@@ -74,8 +74,17 @@
             .cred-div{
                 border-style: solid;
                 background-color: whitesmoke;
-                width: 40%;
             }
+            .cred-subdiv{
+                display:flex;
+                padding-top: 20px;
+            }
+            .cred-subdiv .img{
+                margin-top: 20px;
+                position: relative;
+                top: 20px;
+            }
+            
         </style>
     </head>
     <body>
@@ -156,12 +165,24 @@
     <main>
         <div class="cred-div">
             <h2>Contacte del creador de la pagina web</h2>
-            <p>Gmail: bieltorruella2006@gmail.com</p>
-            <a href="https://www.linkedin.com/in/biel-torruella-may%C3%B3s-bb87bb34b/" target="_blank">
-                <button>
-                    <img src='https://static.vecteezy.com/system/resources/previews/018/930/480/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png' height="60" width="60" />
-                </button>
-            </a>
+            <div class="cred-subdiv">
+                <p>Gmail</p>
+                <img src="https://cdn.pixabay.com/photo/2019/10/19/17/24/gmail-4561841_1280.png" height="24">
+                <p>: bieltorruella2006@gmail.com</p>
+            </div>
+            <div class="cred-subdiv">
+                <p>Linkedin:</p>
+                <a href="https://www.linkedin.com/in/biel-torruella-may%C3%B3s-bb87bb34b/" target="_blank">
+                    <button>
+                        <img src='https://static.vecteezy.com/system/resources/previews/018/930/480/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png' height="60" width="60" />
+                    </button>
+                </a>
+            </div>
+            <div class="cred-subdiv">
+                <a href="services.html" target="_blank">
+                    Busques un profesor particular?
+                </a>
+            </div>
         </div>
     </main>
     </body>
